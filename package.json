@@ -1,0 +1,30 @@
+{
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "Cypress project for demoblaze.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabinmaharjan364/demo-blaze-cypress.git"
+  },
+  "keywords": [
+    "e2e",
+    "tests",
+    "cypress",
+    "automation",
+    "frameworks"
+  ],
+  "author": "SabinMaharjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabinmaharjan364/demo-blaze-cypress/issues"
+  },
+  "homepage": "https://github.com/sabinmaharjan364/demo-blaze-cypress#readme",
+  "devDependencies": {
+    "cypress": "^8.6.0"
+  }
+}
