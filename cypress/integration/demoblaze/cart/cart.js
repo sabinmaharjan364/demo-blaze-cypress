@@ -31,6 +31,7 @@ describe("Login Form test", () => {
             expect(str).to.equal('Product added')
         })        
         cy.on('window:confirm', () => true);        // clicked ok for alert
+
         cy.visit('https://www.demoblaze.com/cart.html')
         cy.get('.btn').contains('Place Order').click()
 
@@ -40,16 +41,16 @@ describe("Login Form test", () => {
           
             // cy.get() will only search for elements within form,
             // not within the entire document
-            cy.get('input[id="name"]').type('try123')
-            cy.get('input[id="country"]').type('Australia')
-            cy.get('input[id="city"]').type('Toowoomba')
-            cy.get('input[id="card"]').type('523612549')
-            cy.get('input[id="month"]').type('01')
-            cy.get('input[id="year"]').type('2023')
+        cy.get('input[id="name"]').type('try123')
+        cy.get('input[id="country"]').type('Australia')
+        cy.get('input[id="city"]').type('Toowoomba')
+        cy.get('input[id="card"]').type('523612549')
+        cy.get('input[id="month"]').type('01')
+        cy.get('input[id="year"]').type('2023')
 
-            cy.get('.btn-primary').contains('Purchase').click();
+        cy.get('.btn-primary').contains('Purchase').click();
 
-            cy.get('.confirm').contains('ok').click();
+        cy.get('.confirm').contains('OK').click();
         //   })
         
     
