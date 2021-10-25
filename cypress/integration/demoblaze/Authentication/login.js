@@ -66,7 +66,7 @@ describe("Login Form test", () => {
         cy.get('#loginpassword')
         .type("try123");
 
-        cy.wait(1000);
+       
         //click the login button and username and password field's data are passed through javascript function.
         cy.get('#logInModal .modal-footer .btn-primary').click();
          // UI should reflect this user being logged in
@@ -77,6 +77,7 @@ describe("Login Form test", () => {
     it("Login with valid data", () => {
         cy.log('filling out user name') // Checking username in log
 
+        cy.wait(1000);
         cy.get('#loginusername')
         .type("try123");
         // .should("have.value", "testy");
@@ -86,7 +87,6 @@ describe("Login Form test", () => {
         cy.get('#loginpassword')
         .type("try123");
 
-        cy.wait(1000);
         //click the login button and username and password field's data are passed through javascript function.
         cy.get('#logInModal .modal-footer .btn-primary').click();
          // UI should reflect this user being logged in
