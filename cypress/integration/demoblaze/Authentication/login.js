@@ -91,9 +91,17 @@ describe("Login Form test", () => {
         cy.get('#logInModal .modal-footer .btn-primary').click();
          // UI should reflect this user being logged in
         // cy.get('#nameofuser').should('contain', 'Welcome try123')
-      
     });
-    
+    // it("Logout", () => {
+    //     cy.wait(1000);
+
+    //     cy.get('#logout2').should('be.visible');
+    //     // cy.get('#logInModal').should('not.exist')
+    //     cy.get('#logout2').click(); // click on login button
+        
+       
+    // });
+       
  
       
   });
